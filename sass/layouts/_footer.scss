@@ -1,0 +1,57 @@
+// footer navigation
+footer.footer-navigation {
+    // position: absolute;
+    background: $blue-550;
+    color: white;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    nav {
+        padding: 4px 0;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        a {
+            span {
+                text-align: center;
+                color: $white;
+                font-size: 13px;
+            }
+            display: block;
+            div {
+                margin: auto;
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat !important;
+                background-position: bottom !important;
+            }
+            .home-icon:hover,
+            .home-icon.active {
+                transition: 0.2s;
+                background: url("../img/white-home-icon.svg");
+            }
+            .camera-icon:hover,.camera-icon.active{
+                background: url("../img/camera-white-icon.svg");
+            }
+            .user-icon:hover,.user-icon.active {
+                background: url("../img/white-user-icon.svg");
+            }
+            .camera-icon {
+                background: url("../img/camera-icon.svg");
+            }
+            .user-icon {
+                background: url("../img/feather-user-icon.svg");
+            }
+            .home-icon {
+                transition: 0.2s;
+                background: url("../img/home-off-icon.svg");
+            }
+            
+           
+        }
+    }
+}

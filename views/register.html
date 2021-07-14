@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Register</title>
+</head>
+
+<body class="register-page bg-gray-200">
+    <div class="container">
+        <header class="d-flex align-items-center">
+            <a onClick="history.go(-1);">
+                <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+            </a>
+            <h2 class="text-uppercase text-color-blue-700">Registrar mi cuenta</h2>
+        </header>
+        <div class="registration-info">
+            <p class="text-color-gray-500">
+                Al pulsar <b>Solicitar mi Cuenta</b>, aceptas las condiciones de uso de Digital Work y 
+                confirmas el procedimiento de tus datos
+            </p>
+            <p class="text-color-gray-500">Por favor, ingresa los datos solicitados:</p>
+        </div>
+        <form action="" class="form-two">
+            <label for="">Nombre completo</label>
+            <div class="form-group">
+                <div class="border-icon"></div>
+                <img src="../img/user-alt-icon.svg" class="icon-border" alt="user icon">
+                <input type="text" class="form-control">
+            </div>
+            <label for="">Teléfono</label>
+            <div class="form-group">
+                <div class="border-icon"></div>
+                <img src="../img/phone-icon.svg" class="icon-border" alt="phone icon">
+                <input type="text" class="form-control">
+            </div>
+            <label for="">Dirección</label>
+            <div class="form-group">
+                <div class="border-icon"></div>
+                <img src="../img/home-icon.svg" class="icon-border" alt="home icon">
+                <input type="text" class="form-control">
+            </div>
+            <p class="text-color-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus varius nibh, sed porta ante
+            </p>
+            <button type="submit" class="btn btn-md btn-center btn-rounded btn-blue-550 font-weight-bold text-color-white btn-open-modal" data-modal="account-request">Solicitar mi cuenta</button>
+        </form>
+        <!-- modal account request -->
+        <div class="modal-container" id="account-request">
+            <div class="modal">
+                <h2 class="modal-title text-color-blue-700">
+                    Solicitud Enviada
+                </h2>
+                <div class="modal-icon text-center">
+                    <img src="../img/simple-minutemailer-icon.svg" alt="wp logo">
+                </div>
+                <div class="modal-body">
+                    <p class="text-color-blue-550 font-weight-600 text-center">Tu solicitud ha sido enviada con éxito. Recibirás un Gmail para la confirmación del registro de tu cuenta.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="login.html" class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center font-weight-bold">Entendido</a>
+                </div>
+            </div>
+        </div>
+        <!-- modal account request end -->
+    </div>
+    <!-- footer -->
+    <footer>
+        <p class="text-color-gray-400">v. 2.4155</p>
+    </footer>
+    <!-- footer end -->
+    <!-- scripts -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

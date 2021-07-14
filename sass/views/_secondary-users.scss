@@ -1,0 +1,119 @@
+.secondary-users-page {
+    position: relative;
+    header {
+        padding-top: 14px;
+        margin-bottom: 15px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    .secondary-users-container {
+        font-family: "Open sans";
+        ul {
+            border: 1px solid $blue-700;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #707070;
+        }
+        .secondary-users-content {
+            margin-top: 20px;
+            .menu-item {
+                padding: 10px 17px;
+                border-bottom: 1px solid $blue-700;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+            .menu-item span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .menu-item img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .add-user-container {
+            margin-top: 35px;
+            h4 {
+                font-family: "Open sans";
+                color: $blue-550;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 6px;
+            }
+            button {
+                background-color: transparent;
+                height: 59px;
+                width: 100%;
+                border-radius: 8px;
+                border: 1px solid $blue-700;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 14px;
+                span{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #BDBDBF;
+                }
+                i{
+                    color: #BDBDBF;
+                    &.fa-plus{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // custom modal
+    .add-user-modal{
+        .modal-body p{        
+            margin-bottom: 47px;
+            font-size: 14px;
+            font-family: 'Open sans';
+        }
+        .modal-body{
+            .input-content{                
+                position: relative;
+                margin-bottom: 44px;
+                input{
+                    outline: none;
+                    border: 1px solid #ADACBC;
+                    border-radius: 8px;
+                    height: 59px;
+                    width: 100%;
+                    transition: .2s;
+                    padding-left: 12px;
+                    font-family: 'Poppins';
+                    font-size: 16px;
+                    &:hover, &:focus{
+                        border-color: $yellow-500;
+                    }
+                    &:hover + label, &:focus + label{
+                        
+                        color: $blue-700;
+                    }
+                }
+                label{
+                    font-weight: 600;
+                    transition: 0.2s;
+                    color: #ADACBC;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    position: absolute;
+                    left: 12px;
+                    top: -23px;
+                }
+            }
+        }
+    }
+}

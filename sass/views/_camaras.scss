@@ -1,0 +1,24 @@
+.camaras-page{
+    position: relative;
+    padding-bottom: 80px;
+    p{
+        font-size: 14px;
+    }
+    p,span{
+        font-family: 'Open Sans';
+    }
+    .group-cameras{
+        margin-top: 15px;
+    }
+    header{
+        padding-top: 14px;
+        margin-bottom: 10px;
+        h2{
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a{
+            font-family:initial;
+        }
+    }
+}

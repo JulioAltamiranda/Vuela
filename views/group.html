@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <title>Camera group</title>
+</head>
+
+<body class="group-page">
+    <div class="container">
+        <header class="d-flex align-items-center">
+            <a href="home.html">
+                <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+            </a>
+            <h2 class="text-uppercase text-color-blue-700">Grupo de cámara</h2>
+        </header>
+        <!-- group-desc -->
+        <div class="d-flex justify-content-between align-items-center group-desc">
+            <div class="d-block">
+                <h3>Lorem ipsum dolor</h3>
+                <p class="text-color-blue-550">Cámaras agrupadas (4)</p>
+            </div>
+            <div class="group-img d-flex justify-content-center align-items-center">
+                <img src="../img/toilet-icon.svg" alt="toilet icon">
+            </div>
+        </div>
+        <!-- group-desc end -->
+
+        <!-- group cameras -->
+        <div class="group-cameras">
+            <a href="single-camera.html" class="camera-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/ionic-ios-videocam.svg" alt="">
+                    <div class="group-text">
+                        <p>Lorem Ipsum Jipsum</p>
+                        <span>Cámara 04</span>
+                    </div>
+                </div>
+                <div class="camera-status d-flex align-items-center">
+                    <div class="status-desc">
+                        <p>Estado</p>
+                        <span class="active">Activo</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            <a class="camera-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/ionic-ios-videocam.svg" alt="">
+                    <div class="group-text">
+                        <p>Lorem Ipsum Jipsum</p>
+                        <span>Cámara 04</span>
+                    </div>
+                </div>
+                <div class="camera-status d-flex align-items-center">
+                    <div class="status-desc">
+                        <p>Estado</p>
+                        <span class="active">Activo</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            <a class="camera-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/ionic-ios-videocam.svg" alt="">
+                    <div class="group-text">
+                        <p>Lorem Ipsum Jipsum</p>
+                        <span>Cámara 04</span>
+                    </div>
+                </div>
+                <div class="camera-status d-flex align-items-center">
+                    <div class="status-desc">
+                        <p>Estado</p>
+                        <span>Inactivo</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            <a class="camera-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/ionic-ios-videocam.svg" alt="">
+                    <div class="group-text">
+                        <p>Lorem Ipsum Jipsum</p>
+                        <span>Cámara 04</span>
+                    </div>
+                </div>
+                <div class="camera-status d-flex align-items-center">
+                    <div class="status-desc">
+                        <p>Estado</p>
+                        <span class="active">Activo</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+        <!-- group cameras -->
+
+        <!-- camera option -->
+        <div class="camera-option">
+            <a href="" class="btn btn-blue-550 btn-center text-color-white btn-md btn-rounded btn-open-modal"
+                data-modal="edit-group">
+                Modificar grupo de cámaras</a>
+            <a href="" class="btn btn-outline-blue-700 btn-center font-weight-bold btn-md btn-rounded btn-open-modal"
+                data-modal="warning">Eliminar grupo</a>
+        </div>
+        <!-- camera option end -->
+
+        <!-- modal warning -->
+        <div class="modal-container" id="warning">
+            <div class="modal">
+                <h2 class="modal-title text-color-blue-700">
+                    ¿Estás seguro?
+                </h2>
+                <div class="modal-icon text-center">
+                    <img src="../img/exclamation-circle-icon.svg" alt="exclamation circle icon">
+                </div>
+                <div class="modal-body">
+                    <p class="text-color-blue-550 text-uppercase font-weight-600 text-center">Estás por eliminar un
+                        grupo <br>de cámaras y no podrás recuperarlo</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                        data-modal="warning">Cancelar</a>
+                    <a
+                        class="btn btn-lg btn-blue-550 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold">Estoy
+                        seguro</a>
+                </div>
+            </div>
+        </div>
+        <!-- modal warning end -->
+
+        <!-- modal edit group -->
+        <div class="modal-container edit-group" id="edit-group">
+            <div class="modal">
+                <!-- step 1 -->
+                <form class="form-step active">
+                    <h2 class="modal-title text-color-blue-700">
+                        Modificar Grupo
+                    </h2>
+                    <div class="modal-body">
+                        <label for="name" class="d-block text-color-blue-550 text-uppercase font-weight-500">Nombre de
+                            grupo</label>
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" value="Loremp ipsum dolor">
+                        </div>
+                        <p class="text-color-blue-550 text-uppercase font-weight-600 text-center">Añade o elimina
+                            cámaras del grupo</p>
+                        <div class="checkbox-list">
+                            <div for="camera-1"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500"> Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-1">
+                                <label for="camera-1" class="custom-checkbox"></label>
+                            </div>
+                            <div for="camera-2"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-2">
+                                <label for="camera-2" class="custom-checkbox"></label>
+                            </div>
+                            <div for="camera-3"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500"> Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-3">
+                                <label for="camera-3" class="custom-checkbox"></label>
+                            </div>
+                            <div for="camera-4"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500"> Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-4">
+                                <label for="camera-4" class="custom-checkbox"></label>
+                            </div>
+                            <div for="camera-5"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500"> Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-5">
+                                <label for="camera-5" class="custom-checkbox"></label>
+                            </div>
+                            <div for="camera-6"
+                                class="checkbox-content d-flex justify-content-between align-items-center">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500"> Cámara 04</span>
+                                </div>
+                                <input type="checkbox" id="camera-6">
+                                <label for="camera-6" class="custom-checkbox"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                            data-modal="edit-group">Cancelar</a>
+                        <button
+                            class="btn btn-lg btn-blue-550 text-color-white btn-bottom-rounded btn-center font-weight-bold text-uppercase btn-next">Siguiente</button>
+                    </div>
+                </form>
+                <!-- step 2 -->
+                <form class="form-step step2">
+                    <div class="d-flex justify-content-between align-items-center icon-info">
+                        <div class="d-block">
+                            <h2 class="modal-title text-color-blue-700">
+                                Icono de grupo
+                            </h2>
+                            <p class="text-color-blue-550 text-uppercase font-weight-600">Elige un icono para
+                                <br>diferenciar tu grupo</p>
+                        </div>
+                        <div class="group-img d-flex justify-content-center align-items-center">
+                            <img src="../img/toilet-icon.svg" alt="toilet icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="camera-icons">
+                            <label for="1">
+                                <input type="radio" name="test" id="1">
+                                <div class="icon icon-1" style="background: url(../img/ionic-md-school.svg);"></div>
+                            </label>
+                            <label for="2">
+                                <input type="radio" name="test" id="2">
+                                <div class="icon icon-2" style="background: url(../img/awesome-baby.svg);"></div>
+                            </label>
+                            <label for="3">
+                                <input type="radio" name="test" id="3">
+                                <div class="icon icon-3" style="background: url(../img/awesome-bath.svg);"></div>
+                            </label>
+                            <label for="4">
+                                <input type="radio" name="test" id="4">
+                                <div class="icon icon-4" style="background: url(../img/awesome-desktop.svg);"></div>
+                            </label>
+                            <label for="5">
+                                <input type="radio" name="test" id="5">
+                                <div class="icon icon-5" style="background: url(../img/ionic-ios-man.svg);"></div>
+                            </label>
+                            <label for="6">
+                                <input type="radio" name="test" id="6">
+                                <div class="icon icon-6" style="background: url(../img/ionic-ios-woman.svg);"></div>
+                            </label>
+                            <label for="7">
+                                <input type="radio" name="test" id="7">
+                                <div class="icon icon-1" style="background: url(../img/ionic-md-school.svg);"></div>
+                            </label>
+                            <label for="8">
+                                <input type="radio" name="test" id="8">
+                                <div class="icon icon-2" style="background: url(../img/awesome-baby.svg);"></div>
+                            </label>
+                            <label for="9">
+                                <input type="radio" name="test" id="9">
+                                <div class="icon icon-3" style="background: url(../img/awesome-bath.svg);"></div>
+                            </label>
+                            <label for="10">
+                                <input type="radio" name="test" id="10">
+                                <div class="icon icon-4" style="background: url(../img/awesome-desktop.svg);"></div>
+                            </label>
+                            <label for="11">
+                                <input type="radio" name="test" id="11">
+                                <div class="icon icon-5" style="background: url(../img/ionic-ios-man.svg);"></div>
+                            </label>
+                            <label for="12">
+                                <input type="radio" name="test" id="12">
+                                <div class="icon icon-6" style="background: url(../img/ionic-ios-woman.svg);"></div>
+                            </label>
+                            <label for="13">
+                                <input type="radio" name="test" id="13">
+                                <div class="icon icon-1" style="background: url(../img/ionic-md-school.svg);"></div>
+                            </label>
+                            <label for="14">
+                                <input type="radio" name="test" id="14">
+                                <div class="icon icon-2" style="background: url(../img/awesome-baby.svg);"></div>
+                            </label>
+                            <label for="15">
+                                <input type="radio" name="test" id="15">
+                                <div class="icon icon-3" style="background: url(../img/awesome-bath.svg);"></div>
+                            </label>
+                            <label for="16">
+                                <input type="radio" name="test" id="16">
+                                <div class="icon icon-4" style="background: url(../img/awesome-desktop.svg);"></div>
+                            </label>
+                            <label for="17">
+                                <input type="radio" name="test" id="17">
+                                <div class="icon icon-5" style="background: url(../img/ionic-ios-man.svg);"></div>
+                            </label>
+                            <label for="18">
+                                <input type="radio" name="test" id="18">
+                                <div class="icon icon-6" style="background: url(../img/ionic-ios-woman.svg);"></div>
+                            </label>
+                            <label for="19">
+                                <input type="radio" name="test" id="19">
+                                <div class="icon icon-1" style="background: url(../img/ionic-md-school.svg);"></div>
+                            </label>
+                            <label for="20">
+                                <input type="radio" name="test" id="20">
+                                <div class="icon icon-2" style="background: url(../img/awesome-baby.svg);"></div>
+                            </label>
+                            <label for="21">
+                                <input type="radio" name="test" id="21">
+                                <div class="icon icon-3" style="background: url(../img/awesome-bath.svg);"></div>
+                            </label>
+                            <label for="22">
+                                <input type="radio" name="test" id="22">
+                                <div class="icon icon-4" style="background: url(../img/awesome-desktop.svg);"></div>
+                            </label>
+                            <label for="23">
+                                <input type="radio" name="test" id="23">
+                                <div class="icon icon-5" style="background: url(../img/ionic-ios-man.svg);"></div>
+                            </label>
+                            <label for="24">
+                                <input type="radio" name="test" id="24">
+                                <div class="icon icon-6" style="background: url(../img/ionic-ios-woman.svg);"></div>
+                            </label>
+                            <label for="25">
+                                <input type="radio" name="test" id="25">
+                                <div class="icon icon-1" style="background: url(../img/ionic-md-school.svg);"></div>
+                            </label>
+                            <label for="26">
+                                <input type="radio" name="test" id="26">
+                                <div class="icon icon-2" style="background: url(../img/awesome-baby.svg);"></div>
+                            </label>
+                            <label for="27">
+                                <input type="radio" name="test" id="27">
+                                <div class="icon icon-3" style="background: url(../img/awesome-bath.svg);"></div>
+                            </label>
+                            <label for="28">
+                                <input type="radio" name="test" id="28">
+                                <div class="icon icon-4" style="background: url(../img/awesome-desktop.svg);"></div>
+                            </label>
+                            <label for="29">
+                                <input type="radio" name="test" id="29">
+                                <div class="icon icon-5" style="background: url(../img/ionic-ios-man.svg);"></div>
+                            </label>
+                            <label for="30">
+                                <input type="radio" name="test" id="30">
+                                <div class="icon icon-6" style="background: url(../img/ionic-ios-woman.svg);"></div>
+                            </label>
+                        </div>
+                        <!-- <div class="camera-icons">
+                            <div class="camera-icon">
+                                <img src="../img/ionic-md-school.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-baby.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-bath.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-desktop.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-man.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-woman.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-md-school.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-baby.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-bath.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-desktop.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-man.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-woman.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-md-school.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-baby.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-bath.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-desktop.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-man.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-woman.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-md-school.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-baby.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-bath.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/awesome-desktop.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-man.svg" alt="">
+                            </div>
+                            <div class="camera-icon">
+                                <img src="../img/ionic-ios-woman.svg" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="modal-footer">
+                        <a
+                            class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-prev">Volver</a>
+                        <button
+                            class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold btn-close-modal"
+                            data-modal="edit-group">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- modal edit group end -->
+    </div>
+    <!-- footer -->
+    <footer class="footer-navigation">
+        <nav>
+            <a href="home.html">
+                <div class="home-icon"></div>
+                <span>Inicio</span>
+            </a>
+            <a href="cameras.html">
+                <div class="camera-icon active"></div>
+                <span>Cámaras</span>
+            </a>
+            <a href="my-account.html" class="d-flex">
+                <div class="user-icon"></div>
+                <span>Yo</span>
+            </a>
+        </nav>
+    </footer>
+    <!-- footer end -->
+    <!-- scripts -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

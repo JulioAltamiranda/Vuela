@@ -1,0 +1,92 @@
+.recordings-history-page {
+    position: relative;
+    padding-bottom: 80px;
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 20px;
+        background: $white;
+        a img {
+            margin-right: 19px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    header .d-flex + h2 {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    form {
+        font-family: "Open sans";
+        label {
+            font-size: 16px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .form-group {
+            button {
+                // top: 36;
+                cursor: pointer;
+                position: absolute;
+                left: 25%;
+                background-color: transparent;
+            }
+            margin-bottom: 12px;
+        }
+        .form-control {
+            border-color: $gray-350;
+            height: 50px;
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    .thead {
+        padding: 0px 20px;
+        h3 {
+            font-size: 14px;
+            color: $blue-550;
+        }
+    }
+    .table-container {
+        margin-top: 233px;
+         span {
+            padding-left: 20px;
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            color: $blue-550;
+            font-weight: 500;
+        }
+    }
+    .recordings-history-table {
+        font-family: "Open Sans";
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 8px;
+        border-style: hidden;
+        box-shadow: 0 0 0 1px #bdbdbf;
+        td {
+            padding: 14px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid #bdbdbf;
+            color: $blue-700;
+        }
+        .play-btn {
+            background: url("../img/play-circle.svg");
+            background-repeat: no-repeat;
+            width: 100px;
+            background-position: center;
+        }
+        .play-btn:hover,
+        .play-btn:focus {
+            background: url("../img/feather-play-circle.svg") $yellow-500;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

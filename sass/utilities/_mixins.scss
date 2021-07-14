@@ -1,0 +1,18 @@
+@mixin reset-button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin button {
+    @include reset-button;
+    padding: 12px;
+    opacity: .95;
+    transition: .2s;
+    width:100%;
+    font-size: 18px;
+    display: flex;
+    &:hover{
+        opacity: 1;
+    }
+}

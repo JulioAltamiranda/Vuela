@@ -1,0 +1,215 @@
+.single-camera-page {
+    position: relative;
+    padding-bottom: 12px;
+    min-height: 587px;
+    span,
+    p {
+        font-family: "Open sans";
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 6;
+        background: #fff;
+    }
+    .video {
+        position: relative;
+        .live {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        .poster {
+            width: 100%;
+        }
+        .full-screen-btn {
+            position: absolute;
+            bottom: 22px;
+            right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $gray-200;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            i {
+                font-size: 22px;
+                color: $gray-400;
+            }
+        }
+    }
+
+    .camera-description {
+        position: relative;
+        margin-top: 14px;
+        h2 {
+            font-size: 22px;
+        }
+        .d-flex {
+            a img {
+                align-self: flex-start;
+                margin-right: 12px;
+                margin-top: 4px;
+            }
+        }
+        .d-block {
+            p {
+                color: #8c8c9e;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            button {
+                cursor: pointer;
+                margin-top: 7px;
+                display: block;
+                background-color: transparent;
+                color: #161622;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .status {
+            position: absolute;
+            bottom: 2px;
+            right: 12px;
+            text-align-last: end;
+            // text-align: center;
+            p {
+                color: $blue-550;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            span {
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $gray-400;
+                &.active {
+                    color: $yellow-500;
+                }
+            }
+        }
+    }
+    .camera-users {
+        margin-top: 351px;
+        border: 1px solid #bdbdbf;
+        border-radius: 8px;
+        opacity: 1;
+        // padding: 15px;
+        .header {
+            padding: 0 15px;
+            padding-top: 15px;
+        }
+        .header + p {
+            margin-left: 45px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: $gray-400;
+        }
+        .users {
+            img {
+                margin: 0 5px;
+            }
+        }
+        button {
+            cursor: pointer;
+            margin-top: 13px;
+            height: 56px;
+            i {
+                color: $blue-700;
+                font-size: 14px;
+                margin-right: 12px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .camera-options-container {
+        margin-top: 20px;
+        .option-title {
+            text-transform: uppercase;
+            color: #413F60;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .camera-options-content {
+            border: 1px solid #bdbdbf;
+            border-radius: 8px;
+            .camera-option {
+                display: flex;
+                border-bottom: 1px solid #bdbdbf;
+                padding: 17px;
+                align-items: center;
+                justify-content: space-between;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                p{
+                    color: $blue-700;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                img{
+                    margin-right: 12px;
+                }
+                .option-text{
+                    span{
+                        font-size: 14px;
+                        color: $gray-400;
+                    }
+                }
+                &:first-child img{
+                    align-self: flex-start;
+                    margin-top: 6px;
+                }
+                i{
+                    color: $gray-350;
+                }
+            }
+        }
+    }
+    // custom title modal
+    .modal-container .modal .modal-title {
+        margin-bottom: 6px;
+        font-size: 26px;
+    }
+    .modal-body{
+        p{
+            font-size: 14px;
+        }
+    }
+    // custom form
+    .form-group {
+        margin-top: 20px;
+    }
+    .form-control {
+        height: 60px;
+        padding-left: 16px;
+        font-family: "Open sans";
+        font-weight: 400;
+        color: $blue-700;
+        &::placeholder {
+            color: #bdbdbf;
+        }
+    }
+    // custom modal 
+    .users-secondary{
+        .modal-body > p{
+            margin: 12px 0;
+            margin-bottom: 20px;
+        }
+    }
+    // custom chekbox list
+    .checkbox-list img{
+        width: 44px;
+        margin-right: 12px;
+    }
+}

@@ -1,0 +1,25 @@
+.documentation-page {
+    position: relative;
+    padding-bottom: 80px;
+    header {
+        padding-top: 14px;
+        margin-bottom: 30px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    .documentation-container{
+        & > span{
+            display: block;
+            color: $gray-400;
+            font-family: 'Open sans';
+            margin-bottom: 20px;
+            line-height: 28px;
+        }
+    }
+   
+}

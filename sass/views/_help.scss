@@ -1,0 +1,24 @@
+.help-page {
+    position: relative;
+    header {
+        padding-top: 14px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    h4 {
+        font-family: "Open sans";
+        color: $blue-550;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+    .help-container{
+        margin-top: 38px;
+    }
+}

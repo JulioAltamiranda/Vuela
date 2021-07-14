@@ -1,0 +1,33 @@
+.documentation-single-page {
+    position: relative;
+    header {
+        padding-top: 14px;
+        margin-bottom: 30px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    .documentation-single-container{
+        h3{
+            font-size: 26px;
+            font-family: 'Open sans';
+            color: $blue-700;
+            margin-bottom: 19px;
+            color: $blue-700;
+        }
+        p{
+            font-family: 'Open sans';
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            width: 96%;
+            margin-bottom: 36px;
+            color: $blue-700;
+        }
+    }
+   
+}

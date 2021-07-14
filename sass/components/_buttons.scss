@@ -1,0 +1,42 @@
+.btn{
+    @include button;
+}
+.btn-yellow-500{
+    background-color: $yellow-500;
+}
+.btn-blue-500{
+    background-color: $blue-500;
+}
+.btn-blue-550{
+    background-color: $blue-550;
+}
+.btn-outline-blue-550{
+    border: 1px solid $blue-550;
+    color: $blue-550;
+    background-color: transparent;
+}
+.btn-outline-blue-700{
+    border: 1px solid $blue-700;
+    color: $blue-700;
+    background-color: transparent;
+}
+.btn-gray-200{
+    background-color: $gray-200;
+}
+.btn-rounded{
+    border-radius: 8px;
+}
+.btn-md{
+    height: 55px;
+}
+.btn-lg{
+    height: 65px;
+}
+.btn-bottom-rounded{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.btn-center{
+    justify-content: center;
+    align-items: center;
+}

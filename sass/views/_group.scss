@@ -1,0 +1,135 @@
+.group-page{
+    position: relative;
+    padding-bottom: 80px;
+    p{
+        font-size: 14px;
+    }
+    p,span{
+        font-family: 'Open Sans';
+    }
+    header{
+        padding-top: 14px;
+        margin-bottom: 40px;
+        h2{
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a{
+            font-family:initial;
+        }
+    }
+    .group-desc{
+        h3{
+            font-size: 25px;
+            color: #010028;
+        }
+        p{
+            margin-top:0px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    .group-img{
+        width: 59px;
+        height: 59px;
+        background-color:  $gray-350;
+        border-radius: 8px;
+    }
+    
+    .camera-option{
+        margin-top: 90px;
+        a{
+            font-size: 16px;
+            margin: 12px 0;
+            font-weight: 600;
+        }
+    }
+    // custom modal edit group
+    .modal-body label{
+        font-size: 14px;
+        margin-left: 14px;
+    }
+    .modal-body span{
+       font-size: 14px;
+       font-weight: 600;
+    }
+    // custom form
+    .form-group{
+        margin-bottom: 24px;
+    }
+    .form-control{
+        height: 69px;
+        padding-left: 14px;
+        color: $blue-700;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    // edit modal of edit group
+    .modal-container.edit-group{
+        .step2{
+            .modal-title{
+                margin-bottom: 6px;
+                text-align: left;
+            }
+            .icon-info{
+                padding: 0 20px;
+            }
+        }
+    }
+    .camera-icons{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3px;
+        padding: 9px;
+        border: 1px solid $gray-350;
+        border-radius: 8px;
+        input[type=radio] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        label{
+            all: unset;
+        }
+        .icon{
+            width: 40px;
+            height: 46px;
+            cursor: pointer;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+            border-radius: 7px;
+        }
+        input[type=radio]:checked+.icon-1{
+            background: url('../img/ionic-white-md-school.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-2{
+            background: url('../img/awesome-white-baby.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-3{
+            background: url('../img/awesome-white-bath.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-4{
+            background: url('../img/awesome-white-desktop.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-5{
+            background: url('../img/ionic-ios-white-man.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-6{
+            background: url('../img/ionic-white-ios-woman.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+    }
+}

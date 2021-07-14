@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <title>Single camera</title>
+</head>
+
+<body class="single-camera-page">
+    <!-- header -->
+    <header>
+        <div class="video">
+            <img src="../img/group96.svg" class="live" alt="live">
+            <img src="../img/Image.png" class="poster" alt="image">
+            <div class="full-screen-btn btn-open-modal" data-modal="full-screen-video">
+                <i class="fas fa-expand"></i>
+            </div>
+            <div class="modal-container modal-video" id="full-screen-video">
+                <div class="modal">
+                    <div class="video-content">
+                        <div class="video-header">
+                            <div class="d-flex">
+                                <img src="../img/feather-arrow-left.svg" alt="arrow left">
+                                <img src="../img/group96.svg" alt="live">
+                            </div>
+                            <a href="download-recording-1.html" class="d-flex right">
+                                <span style="color: white;">Descargar</span>
+                                <img src="../img/feather-download.svg" style="margin-top: 0;" alt="download icon">
+                            </a>
+                        </div>
+                        <img src="../img/Image@2x.png" class="live-video" alt="live video">
+                        <div class="video-bottom">
+                            <div class="time-line"></div>
+                            <span class="time">02:76 hrs</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- camera description -->
+        <div class="camera-description container">
+            <div class="d-flex">
+                <a href="cameras.html">
+                    <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+                </a>
+                <div class="d-block">
+                    <h2 class="text-color-blue-700">Nombre de la cámara</h2>
+                    <p>Cámara 04</p>
+                    <button class="btn-open-modal" data-modal="edit-name">
+                        <img src="../img/pencil-icon.svg" alt="pencil icon">
+                        <span class="font-weight-600">Editar</span>
+                    </button>
+                </div>
+                <div class="status">
+                    <p>Estado</p>
+                    <span class="active">Activo</span>
+                </div>
+            </div>
+        </div>
+        <!-- camera description end -->
+
+        <!-- edit name -->
+        <div class="modal-container" id="edit-name">
+            <div class="modal">
+                <h2 class="modal-title text-color-blue-700">
+                    Nombre de Cámara
+                </h2>
+                <div class="modal-body">
+                    <p class="text-color-blue-550 text-uppercase font-weight-600 text-center">Editar nombre a tu cámara
+                    </p>
+                    <div class="form-group">
+                        <input type="text" value="Curabitur Puerat" class="form-control">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                        data-modal="edit-name">Cancelar</a>
+                    <button
+                        class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold">Guardar
+                        cambio</button>
+                </div>
+            </div>
+        </div>
+        <!-- edit name end -->
+
+        <!-- users secondary -->
+        <div class="modal-container users-secondary" id="users-secondary">
+            <div class="modal">
+                <h2 class="modal-title text-color-blue-700">
+                    Compartir Cámara
+                </h2>
+                <div class="modal-body">
+                    <p class="text-color-blue-550 text-uppercase font-weight-600 text-center">Agrega o quita usuarios secundarios</p>
+                    <div class="checkbox-list">
+                        <div for="camera-1" class="checkbox-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img src="../img/Elipse-12.png" alt="image of user">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Esposa</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="camera-1">
+                            <label for="camera-1" class="custom-checkbox"></label>
+                        </div>
+                        <div for="camera-2" class="checkbox-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img src="../img/Elipse-13.png" alt="image of user">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Hijo</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="camera-2">
+                            <label for="camera-2" class="custom-checkbox"></label>
+                        </div>
+                        <div for="camera-3" class="checkbox-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img src="../img/Elipse-14.png" alt="image of user">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Hermano</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="camera-3">
+                            <label for="camera-3" class="custom-checkbox"></label>
+                        </div>
+                        <div for="camera-4" class="checkbox-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img src="../img/Elipse-31.png" alt="image of user">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Hermano</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="camera-4">
+                            <label for="camera-4" class="custom-checkbox"></label>
+                        </div>
+                        <div for="camera-5" class="checkbox-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img src="../img/Elipse-32.png" alt="image of user">
+                                <div class="d-block checkbox-text">
+                                    <p class="text-color-blue-700 font-weight-600">Lorem Ipsum Jipsm</p>
+                                    <span class="text-color-gray-500 font-weight-500">Nuera</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="camera-5">
+                            <label for="camera-5" class="custom-checkbox"></label>
+                        </div>
+                    </div>s
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                        data-modal="users-secondary">Cancelar</a>
+                    <button
+                        class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center font-weight-bold text-uppercase btn-close-modal" data-modal="users-secondary">Guardar
+                        cambios</button>
+                </div>
+            </div>
+        </div>
+        <!-- users secondary end -->
+
+    </header>
+    <!-- header end -->
+
+    <div class="container">
+        <!-- camera users -->
+        <div class="camera-users">
+            <div class="d-flex header justify-content-between">
+                <img src="../img/awesome-user-friends-icon.svg" alt="user alt icon">
+                <h4 class="text-color-blue-700">Compartido con Secundarios</h4>
+                <span class="text-color-blue-700 font-weight-bold">(3)</span>
+            </div>
+            <p>Comparte Cámara con Usuarios</p>
+            <div class="d-flex justify-content-center users">
+                <img src="../img/Elipse-12.png" alt="image of user">
+                <img src="../img/Elipse-13.png" alt="image of user">
+                <img src="../img/Elipse-14.png" alt="image of user">
+            </div>
+            <button class="btn btn-gray-200 btn-center btn-rounded btn-open-modal" data-modal="users-secondary">
+                <i class="fas fa-plus"></i>
+                <span class="text-color-blue-700 font-weight-600">Editar usuarios secundarios</span>
+            </button>
+        </div>
+        <!-- camera users end -->
+
+        <!-- camera options -->
+        <div class="camera-options-container">
+            <p class="option-title">Opciones de cámara</p>
+            <div class="camera-options-content">
+                <div class="camera-option">
+                    <div class="d-flex">
+                        <img src="../img/metro-heart-icon.svg" alt="heart icon">
+                        <div class="option-text">
+                            <p>Agregar a Favoritos</p>
+                            <span>Cámara guardada en favoritos</span>
+                        </div>
+                    </div>
+                    <div class="switch">
+                        <input type="checkbox" checked id="toggle-2" />
+                        <label for="toggle-2"></label>
+                        <span>Sí</span>
+                    </div>
+                </div>
+                <a href="recordings-history.html" class="camera-option">
+                    <div class="d-flex">
+                        <img src="../img/material-video-library-icon.svg" alt="heart icon">
+                        <div class="option-text">
+                            <p>Historial de Grabaciones</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="index.html" class="camera-option">
+                    <div class="d-flex">
+                        <img src="../img/material-featured-video-icon.svg" alt="heart icon">
+                        <div class="option-text">
+                            <p>Grupos de Cámaras</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="camera-option">
+                    <div class="d-flex">
+                        <img src="../img/awesome-info-circle-icon.svg" alt="heart icon">
+                        <div class="option-text">
+                            <p>Información Técnica</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <!-- camera options end -->
+
+
+        <!-- footer -->
+        <footer class="footer-navigation">
+            <nav>
+                <a href="home.html">
+                    <div class="home-icon"></div>
+                    <span>Inicio</span>
+                </a>
+                <a href="cameras.html">
+                    <div class="camera-icon active"></div>
+                    <span>Cámaras</span>
+                </a>
+                <a href="my-account.html" class="d-flex">
+                    <div class="user-icon"></div>
+                    <span>Yo</span>
+                </a>
+            </nav>
+        </footer>
+        <!-- footer end -->
+        <!-- scripts -->
+        <script src="../js/app.js"></script>
+</body>
+
+</html>

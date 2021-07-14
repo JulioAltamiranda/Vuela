@@ -1,0 +1,197 @@
+.download-recording-page {
+    .download-recording-content {
+        min-height: 379px;
+    }
+    .blocks-container {
+        width: 40%;
+        padding: 14px;
+        .header {
+            a {
+                margin-right: 12px;
+                margin-top: 4px;
+                display: block;
+            }
+        }
+        h3 {
+            margin-top: 2px;
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-family: "Open sans";
+        }
+    }
+    .blocks-slide {
+        border: 0.5px solid #adacbc;
+        border-radius: 4px;
+        height: 45px;
+        width: 100%;
+        position: relative;
+        background-color: #f5f6f8;
+        text-align: center;
+        .blocks-slide-content {
+            position: absolute;
+            top: 0;
+            font-weight: 600;
+            color: $blue-550;
+            font-size: 16px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            height: 53%;
+            text-align: center;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            i {
+                color: $blue-550;
+            }
+            &.btn-left {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border-right: 0.5px solid #adacbc;
+            }
+            &.btn-right {
+                border-left: 0.5px solid #adacbc;
+                right: 0;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    }
+    .blocks-grid-container {
+        p {
+            margin: 6px 0;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "Open sans";
+        }
+        button {
+            margin-top: 12px;
+            height: 40px;
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                margin-right: 8px;
+            }
+        }
+    }
+    .video-container {
+        position: relative;
+        width: 60%;
+        .video-header {
+            display: none;
+        }
+        .live-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            margin: auto;
+            height: 66%;
+        }
+    }
+}
+// normalmente las clases y estilos que estan afuera de la clase padre, puede que los estilos esten siendo compartidos en otras paginas :")
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+    .input-content {
+        position: relative;
+        padding: 12px 19px;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        border: 0.5px solid #adacbc;
+        background: #f5f6f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+            appearance: none;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: block;
+        }
+        label {
+            font-size: 14px;
+            font-family: "Open sans";
+            font-weight: 600;
+            position: relative;
+            color: $blue-550;
+        }
+        input:checked {
+            box-shadow: inset -1px 0px 12px 1px #adacbc;
+        }
+    }
+}
+
+.download-recording-page{
+    // custom modal
+    .download-request{
+        .modal{
+            width: 45%;
+        }
+        .download-request-modal .modal-body{
+            padding: 0 30px;
+            .d-grid{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 48px;
+                    font-weight: 600;
+                    font-family: 'Open sans';
+                    border: 0.5px solid #ADACBC;
+                    border-radius: 4px;
+                    background: #F5F6F8;
+                    color: $blue-550;
+                }
+            }
+            p{
+                margin-top: 20px;
+                font-size: 14px;
+                font-size: 600;
+            }
+            
+            margin-bottom: 40px;
+        }
+        .download-request-modal .modal-footer{
+            a{
+                border-bottom-left-radius: 8px;
+            }
+            button{
+                margin-top: 0;
+                border-bottom-right-radius: 8px;
+                height: 65px;
+            }
+        }
+        .send-request{
+            padding: 0px;
+            .modal-body{
+                margin-bottom: 30px;
+                p{
+                    font-size: 14px;
+                }
+            }   
+            .modal-footer{
+                
+            }
+        }
+    }
+}

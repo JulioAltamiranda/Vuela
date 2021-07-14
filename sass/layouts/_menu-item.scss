@@ -1,0 +1,32 @@
+.menu-item-container ul{
+    border: 1px solid $blue-550;
+    border-radius: 8px;
+    // padding: 16px;
+    .menu-item{
+        padding: 16px 17px;
+        
+        font-family: 'Open sans';
+        border-bottom: 1px solid $blue-550;
+        font-weight: 600;
+        &:last-child{
+            border-bottom: 0;
+        }
+        .item-text{    
+            margin-left: 15px;
+            p{
+                min-width: 180px;
+                font-size: 16px;
+                color: $blue-700;
+                font-weight: 600;
+            }
+            span{
+                font-weight: 600;
+                color: $gray-500;
+                
+            }
+        }
+    }
+    li i.fa-chevron-right{
+        color: $gray-350;
+    }
+}

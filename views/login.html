@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Login</title>
+</head>
+
+<body class="login-page">
+    <!-- login content -->
+    <div class="login-content container">
+        <!-- header -->
+        <header class="d-flex justify-content-between align-items-center">
+            <a onClick="history.go(-1);"><img src="../img/arrow-left-icon.svg" alt="arrow left"></a>
+            <a href="" class="text-color-gray-350 font-weight-500 btn-open-modal"
+                data-modal="modal-assistance">¿Asistencia?</a>
+        </header>
+        <!-- header end -->
+        <!-- modal assistance -->
+        <div class="modal-container" id="modal-assistance">
+            <div class="modal">
+                <h2 class="modal-title text-color-blue-700">
+                    Asistencia
+                </h2>
+                <div class="modal-icon text-center">
+                    <img src="../img/wp-logo.svg" alt="wp logo">
+                </div>
+                <div class="modal-body">
+                    <p class="text-color-blue-550 text-uppercase font-weight-500 text-center">te redirigiremos a
+                        whatsapp para ayudarte con un asesor de asistencia</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                        data-modal="modal-assistance">Cancelar</a>
+                    <a
+                        class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold btn-close-modal" data-modal="modal-assistance">Sí,
+                        Quiero asistencia</a>
+                </div>
+            </div>
+        </div>
+        <!-- modal assistance end -->
+
+        <form action="">
+            <div class="form-title">
+                <h1 class="text-color-blue-700">Iniciar Sesión</h1>
+                <p class="text-color-blue-700 font-weight-500">Ingresa tus datos para iniciar sesión</p>
+            </div>
+            <div class="form-group">
+                <div class="border-icon"></div>
+                <img src="../img/user-alt-icon.svg" class="icon-border" alt="user icon">
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group password-content">
+                <div class="border-icon"></div>
+                <img src="../img/lock-icon.svg" class="icon-border" alt="user icon">
+                <input type="password" class="form-control" autocomplete="">
+                <img src="../img/eye-off-icon.svg" class="eye-icon eye-off-icon" alt="user off icon">
+                <img src="../img/eye-on-icon.svg" class="eye-icon eye-on-icon" alt="user on icon">
+            </div>
+            <a href="./recover-password.html" class="forgot-password text-color-blue-700 font-weight-500">¿Olvidaste tu
+                contraseña?<b>Recuperarla</b></a>
+            <div class="form-buttons">
+                <a href="home.html" type="submit"
+                    class="btn btn-md btn-rounded btn-blue-550 btn-center text-color-white font-weight-600">Ingresar</a>
+                <a href="register.html"
+                    class="btn btn-md btn-rounded btn-outline-blue-550 btn-center font-weight-600">Soy Nuevo</a>
+            </div>
+        </form>
+    </div>
+    <!-- login content end -->
+    <!-- footer -->
+    <footer>
+        <img src="../img/logo-footer.svg" alt="footer logo">
+        <p class="text-color-gray-400">v. 2.4155</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

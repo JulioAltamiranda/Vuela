@@ -1,0 +1,50 @@
+.frequent-question-single-page {
+    position: relative;
+    padding-bottom: 80px;
+    header {
+        padding-top: 14px;
+        margin-bottom: 30px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    .frequent-question-single-container {
+        h2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #0d0d0d;
+            font-weight: 600;
+            font-size: 18px;
+            min-height: 415px;
+        }
+        .frequent-question-buttons {
+            // margin-top: 40%;
+            text-align: center;
+            h3 {
+                margin-bottom: 12px;
+            }
+            button {
+                
+                height: 50px;
+                color: $white;
+                font-weight: 18px;
+                margin-bottom: 8px;
+                background-color: #adacbc;
+            }
+        }
+    }
+}
+// custom modal
+.modal-container.assistance-for-user {
+    .modal-body {
+        p {
+            font-size: 14px;
+        }
+    }
+}

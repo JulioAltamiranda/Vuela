@@ -1,0 +1,55 @@
+.group-cameras{
+    margin-top: 37px;
+    border: 1px solid $blue-550;
+    border-radius: 8px;
+    // padding: 16px;
+    .camera-item{
+        padding: 19px 17px;
+        border-bottom: 1px solid $blue-550;
+        &:last-child{
+            border-bottom: 0;
+        }
+        img{
+            margin-top: 9px;
+            align-self: flex-start;
+        }
+        .group-text{    
+            margin-left: 15px;
+            p{
+                font-size: 17px;
+                color: $blue-700;
+                font-weight: 600;
+            }
+            span{
+                font-weight: 600;
+                color: $gray-500;
+                
+            }
+        }
+        .camera-status{
+            .status-desc{
+                margin-right: 14px;
+                text-align: center;
+            }
+            p{
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: $gray-500;
+            }
+            span{
+                color:$gray-350;
+                font-weight: bold;
+                
+                &.active{
+                    color: $yellow-500;
+                }
+            }
+            i{
+                color: #C2C1C7;
+                font-size: 13px;
+            }
+        }
+       
+    }
+}

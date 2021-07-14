@@ -1,0 +1,21 @@
+.frequent-questions-page {
+    position: relative;
+    padding-bottom: 80px;
+    header {
+        padding-top: 14px;
+        margin-bottom: 30px;
+        h2 {
+            margin-left: 14px;
+            font-size: 22px;
+        }
+        a {
+            font-family: initial;
+        }
+    }
+    .frequent-questions-container ul .menu-item .item-text {
+        margin-left: 6px;
+    }
+    .frequent-questions-container ul .menu-item i{
+        color: $gray-300;
+    }
+}

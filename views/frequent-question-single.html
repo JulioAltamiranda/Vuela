@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Frequent question single</title>
+</head>
+
+<body class="frequent-question-single-page">
+    <header class="container d-flex align-items-center">
+        <a onClick="history.go(-1);">
+            <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+        </a>
+        <h2 class="text-uppercase text-color-blue-700">Categoría 1</h2>
+    </header>
+
+    <div class="frequent-question-single-container container">
+        <h2 class="text-color-blue-700">¿Loremp ipsum dolor sit <br>amet, consectetur?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus varius nibh, sed porta ante
+            pharetra. <br>Phasellus et ligula dictum, pretium tellus venenatis, feugiat mauris. Urna vitae enim dapibus a
+            congue turpis tincidunt. Curabitur eu bibendum augue. Curabitur arcu nisi, luctus id neque ut, pretium
+            egestas augue.</p>
+        <div class="frequent-question-buttons">
+            <h3 class="text-color-blue-700">¿Te ayudó esta información?</h3>
+            <button onclick="return location.href='home.html'" class="btn d-block btn-center btn-rounded font-weight-600">Sí, me fue de ayuda</button>
+            <button class="btn btn-center btn-rounded font-weight-600 btn-open-modal" data-modal="help">No, aún tengo dudas</button>
+        </div>
+    </div>
+    
+    <div class="modal-container assistance-for-user" id="help">
+        <div class="modal">
+            <h2 class="modal-title text-color-blue-700">
+                Ayuda en Whatsapp
+            </h2>
+            <div class="modal-icon text-center">
+                <img src="../img/wp-logo.svg" alt="wp logo">
+            </div>
+            <div class="modal-body">
+                <p class="text-color-blue-550 font-weight-500 text-center">Nuestro equipo técnico te ayudará en la <br>menor brevedad posible</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                    data-modal="help">Volver</a>
+                <a
+                    class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold">Sí,
+                    Quiero asistencia</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-navigation">
+        <nav>
+            <a href="home.html">
+                <div class="home-icon"></div>
+                <span>Inicio</span>
+            </a>
+            <a href="cameras.html">
+                <div class="camera-icon"></div>
+                <span>Cámaras</span>
+            </a>
+            <a href="my-account.html" class="d-flex">
+                <div class="user-icon active"></div>
+                <span>Yo</span>
+            </a>
+        </nav>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

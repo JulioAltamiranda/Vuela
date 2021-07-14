@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Help</title>
+</head>
+
+<body class="help-page">
+    <header class="container d-flex align-items-center">
+        <a onClick="history.go(-1);">
+            <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+        </a>
+        <h2 class="text-uppercase text-color-blue-700">ayuda para usuarios</h2>
+    </header>
+    <div class="help-container menu-item-container container">
+        <h4>Reportar un problema</h4>
+        <ul>
+            <a class="menu-item d-flex justify-content-between align-items-center btn-open-modal" data-modal="help">
+                <div class="d-flex">
+                    <img src="../img/ionic-logo-whatsapp.svg" alt="wp icon">
+                    <div class="item-text">
+                        <p>Asistencia por Whatsapp</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <div class="modal-container assistance-for-user" id="help">
+                <div class="modal">
+                    <h2 class="modal-title text-color-blue-700">
+                        Ayuda en Whatsapp
+                    </h2>
+                    <div class="modal-icon text-center">
+                        <img src="../img/wp-logo.svg" alt="wp logo">
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-color-blue-550 font-weight-500 text-center">Nuestro equipo técnico te ayudará
+                            en la <br>menor brevedad posible</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-lg btn-gray-200 text-color-blue-550 btn-center font-weight-bold btn-close-modal"
+                            data-modal="help">Volver</a>
+                        <a
+                            class="btn btn-lg btn-yellow-500 text-color-white btn-bottom-rounded btn-center text-uppercase font-weight-bold">Sí,
+                            Quiero asistencia</a>
+                    </div>
+                </div>
+            </div>
+            <a href="documentation.html" class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/awesome-file-alt.svg" alt="file icon">
+                    <div class="item-text">
+                        <p>Documentación</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </ul>
+    </div>
+    <div class="help-container menu-item-container container">
+        <h4>preguntas frecuentes</h4>
+        <ul>
+            <a href="frequent-questions.html" class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/metro-heart.svg" alt="heart icon">
+                    <div class="item-text">
+                        <p>Categoría 1</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/awesome-globe-americas.svg" alt="world icon">
+                    <div class="item-text">
+                        <p>Categoría 2</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/awesome-info-circle.svg" alt="info icon">
+                    <div class="item-text">
+                        <p>Categoría 3</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/awesome-user-alt.svg" alt="user icon">
+                    <div class="item-text">
+                        <p>Categoría 4</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/awesome-video.svg" alt="video icon">
+                    <div class="item-text">
+                        <p>Categoría 5</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/material-video-library.svg" alt="user image">
+                    <div class="item-text">
+                        <p>Categoría 6</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="menu-item d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../img/metro-suitcase.svg" alt="user image">
+                    <div class="item-text">
+                        <p>Categoría 7</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer class="footer-navigation">
+        <nav>
+            <a href="home.html">
+                <div class="home-icon"></div>
+                <span>Inicio</span>
+            </a>
+            <a href="cameras.html">
+                <div class="camera-icon"></div>
+                <span>Cámaras</span>
+            </a>
+            <a href="my-account.html" class="d-flex">
+                <div class="user-icon active"></div>
+                <span>Yo</span>
+            </a>
+        </nav>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

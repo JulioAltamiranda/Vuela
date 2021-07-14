@@ -1,0 +1,30 @@
+.register-page{
+    height: 100vh;
+    header{
+        padding-top: 14px;
+        margin-bottom: 40px;
+        h2{
+            margin-left: 12px;
+        }
+        a{
+            font-family:initial;
+        }
+    }
+    .registration-info{
+        & p:nth-child(2){
+            margin-top: 30px;
+            margin-bottom: 37px;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-family: 'Open Sans';
+    }
+    .form-group{
+        margin-bottom: 26px;
+    }
+    form p{
+        margin: 35px 0;
+    }
+    
+}

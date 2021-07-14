@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <title>Recordings history</title>
+</head>
+
+<body class="recordings-history-page">
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a onClick="history.go(-1);">
+                    <img src="../img/arrow-left-icon.svg" alt="arrow left icon">
+                </a>
+                <h2 class="text-uppercase text-color-blue-700">Grabaciones</h2>
+            </div>
+            <h2 class="text-color-blue-700">Nombre de la cámara</h2>
+            <!-- search form -->
+            <form action="">
+                <label for="search" class="text-color-blue-550 font-weight-bold">Buscar la fecha de la grabación</label>
+                <div class="form-group">
+                    <input type="text" id="search" class="form-control" placeholder="dd/mm/aaaa">
+                    <button type="submit" class="d-flex btn-center">
+                        <img src="../img/search-icon.svg" alt="search icon">
+                    </button>
+                </div>
+            </form>
+            <!-- search form end -->
+            <div class="d-flex justify-content-between thead">
+                <h3>Fecha</h3>
+                <h3>Reprod</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="container">
+        <div class="table-container">
+            <span class="text-uppercase font-weight-600">Septiembre</span>
+            <table class="recordings-history-table">
+                <tbody>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn btn-open-modal" data-modal="full-screen-video"></td>
+                        <!-- full screen video -->
+                        <div class="modal-container modal-video" id="full-screen-video">
+                            <div class="modal">
+                                <div class="video-content">
+                                    <div class="video-header">
+                                        <div class="d-flex">
+                                            <img src="../img/feather-arrow-left.svg" alt="arrow left">
+                                            <img src="../img/group96.svg" alt="live">
+                                        </div>
+                                        <a href="download-recording-2.html" class="d-flex right">
+                                            <span style="color: white;">Descargar</span>
+                                            <img src="../img/feather-download.svg" alt="download icon">
+                                        </a>
+                                    </div>
+                                    <img src="../img/Image@2x.png" class="live-video" alt="live video">
+                                    <div class="video-bottom">
+                                        <div class="time-line"></div>
+                                        <span class="time">02:76 hrs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- full screen video -->
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Dom, 07 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="text-uppercase font-weight-600">Octubre</span>
+            <table class="recordings-history-table">
+                <tbody>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Dom, 07 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="text-uppercase font-weight-600">Noviembre</span>
+            <table class="recordings-history-table">
+                <tbody>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Dom, 07 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Lun, 01 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 02 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Mier, 03 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Jue, 04 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Vier, 05 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                    <tr>
+                        <td>Sáb, 06 Noviembre</td>
+                        <td class="play-btn"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-navigation">
+        <nav>
+            <a href="home.html">
+                <div class="home-icon"></div>
+                <span>Inicio</span>
+            </a>
+            <a href="cameras.html">
+                <div class="camera-icon active"></div>
+                <span>Cámaras</span>
+            </a>
+            <a href="my-account.html" class="d-flex">
+                <div class="user-icon"></div>
+                <span>Yo</span>
+            </a>
+        </nav>
+    </footer>
+    <!-- footer end -->
+    <!-- scripts -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
