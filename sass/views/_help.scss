@@ -1,5 +1,6 @@
 .help-page {
     position: relative;
+    padding-bottom: 120px;
     header {
         padding-top: 14px;
         h2 {
@@ -20,5 +21,11 @@
     }
     .help-container{
         margin-top: 38px;
+    }
+}
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width:345px){
+    .help-page header h2{
+        font-size: 18px;
     }
 }

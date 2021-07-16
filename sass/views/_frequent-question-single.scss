@@ -48,3 +48,9 @@
         }
     }
 }
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width:355px){
+    .frequent-question-single-page .frequent-question-single-container h2{
+        font-size: 23px;
+    }
+}

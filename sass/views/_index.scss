@@ -44,3 +44,45 @@ footer{
     text-align: center;
     right: 0;
 }
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height:769px){
+    .index-page .logo-content{
+        margin-top: 20px;
+    }
+    .index-page .buttons-menu{
+        margin: 20px 0 50px;
+    }
+    
+}
+@media screen and (max-height:650px){
+    .index-page .logo-content h2{
+        margin-top: 10px;
+    }
+    .index-page .logo-content{
+        margin-top: 0;
+    }
+}
+@media screen and (max-height:598px){
+    .index-page .logo-content img{
+        width: 112px;
+    }
+    footer{
+        bottom: 3%;
+    }
+}
+@media screen and (max-height:558px){
+    .index-page .logo-content{
+        margin-top: -46px;
+    }
+}
+@media screen and (max-width:345px){
+    .index-page .logo-content h2{
+        font-size: 25px;
+    }
+    .index-page .logo-content p{
+        font-size: 14px;
+    }
+}
+
+
+

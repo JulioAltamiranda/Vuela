@@ -58,3 +58,45 @@
     }
 
 }
+
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height:757px){
+    .login-page header{
+        margin-bottom: 40px;
+    }
+    .login-page footer{
+        bottom: 3%;
+    }
+    .login-page .form-buttons{
+        margin: 43px 0 50px;
+    }
+}
+@media screen and (max-height:688px){
+    .login-page header{
+        margin-bottom: 25px;
+    }
+    .login-page .login-content{
+        margin-top: 15px;
+    }
+    .login-page .form-title{
+        margin-bottom: 20px;
+    }
+    .login-page .form-buttons{
+        margin: 20px 0 40px;
+    }
+}
+@media screen and (max-height:575px){
+    .login-page footer{
+        bottom: 3%;
+        width: 112px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:345px){
+    .login-page .form-title h1{
+        font-size: 25px;
+    }
+    .login-page .form-title p{
+        font-size: 15px;
+    }
+}

@@ -141,3 +141,9 @@
         margin-bottom: 6px;
     }
 }
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width:369px){
+    .info-account-page header h2{
+        font-size: 18px;
+    }
+}

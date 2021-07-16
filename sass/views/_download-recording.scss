@@ -1,10 +1,13 @@
 .download-recording-page {
     .download-recording-content {
-        min-height: 379px;
+        min-height: 100vh;
     }
     .blocks-container {
-        width: 40%;
-        padding: 14px;
+        position: relative;
+        width: 36%;
+        margin: 1.5% 0;
+        margin-left: auto;
+        margin-right: auto;
         .header {
             a {
                 margin-right: 12px;
@@ -66,6 +69,11 @@
         }
     }
     .blocks-grid-container {
+        .checkbox-grid{
+            grid-auto-rows: 47px;
+            overflow-y: scroll;
+            height: 158px;
+        }
         p {
             margin: 6px 0;
             font-size: 14px;
@@ -73,6 +81,11 @@
             font-family: "Open sans";
         }
         button {
+            position: absolute;
+            bottom: 0;
+            // width: 100%;
+            left: 0;
+            padding: inherit;
             margin-top: 12px;
             height: 40px;
             span {
@@ -189,9 +202,47 @@
                     font-size: 14px;
                 }
             }   
-            .modal-footer{
-                
-            }
         }
+    }
+}
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height:373px){
+    .download-recording-page .blocks-grid-container .checkbox-grid{
+        height: 100px;        
+    }
+}
+@media screen and (max-width:568px){
+    .download-recording-page .blocks-grid-container .checkbox-grid{
+        grid-auto-rows:35px
+    }
+    .download-recording-page .blocks-slide{
+        height: 35px;
+    }
+}
+@media screen and (max-width:644px){
+    .checkbox-grid .input-content{
+        padding: 0 19px;
+    }
+}
+@media screen and (max-width:670px){
+    .header h2{
+        font-size: 20px;
+    }
+    .download-recording-page .blocks-container h3{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:708px){
+    .download-recording-page .blocks-grid-container .checkbox-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .download-recording-page .blocks-grid-container .checkbox-grid{
+        grid-auto-rows:39px
+    }
+    .download-recording-page .blocks-slide{
+        height: 39px;
+    }
+    .download-recording-page .blocks-slide .blocks-slide-content{
+        font-size: 14px;
     }
 }

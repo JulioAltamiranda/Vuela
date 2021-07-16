@@ -1,6 +1,6 @@
 .single-camera-page {
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 100px;
     min-height: 587px;
     span,
     p {
@@ -213,3 +213,44 @@
         margin-right: 12px;
     }
 }
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width:361px){
+    .single-camera-page .camera-description h2{
+        font-size: 20px;
+    }
+    .single-camera-page .camera-description .d-block p{
+        font-size: 14px;
+    }
+    .single-camera-page .camera-description .status span{
+        font-size: 15px;
+    }
+    .single-camera-page .camera-users .header{
+        padding: 0 10px;
+        padding-top: 15px;
+        h4{
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+    .users{
+        margin-top: 12px;
+        img{
+            width: 60px;
+        }
+    }
+   
+}
+@media screen and (max-width:335px){
+    .single-camera-page .camera-users{
+        margin-top: 326px;
+    }   
+}
+@media screen and (max-height:685px){
+    .single-camera-page .checkbox-list{
+        height: 200px;
+        overflow-y: scroll;
+    }
+}
+

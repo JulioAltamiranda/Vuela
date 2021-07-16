@@ -1,30 +1,68 @@
-.register-page{
+.register-page {
     height: 100vh;
-    header{
+    header {
         padding-top: 14px;
         margin-bottom: 40px;
-        h2{
+        h2 {
             margin-left: 12px;
         }
-        a{
-            font-family:initial;
+        a {
+            font-family: initial;
         }
     }
-    .registration-info{
-        & p:nth-child(2){
+    .registration-info {
+        & p:nth-child(2) {
             margin-top: 30px;
             margin-bottom: 37px;
         }
     }
-    p{
+    p {
         font-size: 14px;
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
     }
-    .form-group{
+    .form-group {
         margin-bottom: 26px;
     }
-    form p{
+    form p {
         margin: 35px 0;
     }
-    
+}
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width: 780px) {
+    .register-page header {
+        margin-bottom: 15px;
+    }
+    .register-page footer {
+        bottom: 2%;
+    }
+    .register-page .registration-info p:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 703px) {
+    .register-page form p {
+        margin: 17px 0;
+    }
+    .register-page .form-group {
+        margin-bottom: 15px;
+    }
+    .register-page .registration-info p:nth-child(2) {
+        margin-top: 15px;
+        margin-bottom: 22px;
+    }
+}
+@media screen and (max-width: 625px) {
+    .register-page footer {
+        position: initial;
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:345px){
+    .register-page header h2{
+        font-size: 21px;
+    }
 }

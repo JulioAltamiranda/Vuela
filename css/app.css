@@ -685,6 +685,48 @@ footer {
   right: 0;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height: 769px) {
+  .index-page .logo-content {
+    margin-top: 20px;
+  }
+
+  .index-page .buttons-menu {
+    margin: 20px 0 50px;
+  }
+}
+@media screen and (max-height: 650px) {
+  .index-page .logo-content h2 {
+    margin-top: 10px;
+  }
+
+  .index-page .logo-content {
+    margin-top: 0;
+  }
+}
+@media screen and (max-height: 598px) {
+  .index-page .logo-content img {
+    width: 112px;
+  }
+
+  footer {
+    bottom: 3%;
+  }
+}
+@media screen and (max-height: 558px) {
+  .index-page .logo-content {
+    margin-top: -46px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .index-page .logo-content h2 {
+    font-size: 25px;
+  }
+
+  .index-page .logo-content p {
+    font-size: 14px;
+  }
+}
 .login-page {
   background-color: #F5F6F8;
   display: flex;
@@ -739,6 +781,53 @@ footer {
   font-size: 14px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height: 757px) {
+  .login-page header {
+    margin-bottom: 40px;
+  }
+
+  .login-page footer {
+    bottom: 3%;
+  }
+
+  .login-page .form-buttons {
+    margin: 43px 0 50px;
+  }
+}
+@media screen and (max-height: 688px) {
+  .login-page header {
+    margin-bottom: 25px;
+  }
+
+  .login-page .login-content {
+    margin-top: 15px;
+  }
+
+  .login-page .form-title {
+    margin-bottom: 20px;
+  }
+
+  .login-page .form-buttons {
+    margin: 20px 0 40px;
+  }
+}
+@media screen and (max-height: 575px) {
+  .login-page footer {
+    bottom: 3%;
+    width: 112px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 345px) {
+  .login-page .form-title h1 {
+    font-size: 25px;
+  }
+
+  .login-page .form-title p {
+    font-size: 15px;
+  }
+}
 .page-recover-password .form-buttons {
   margin: 20px 0 220px;
 }
@@ -771,6 +860,47 @@ footer {
   margin: 35px 0;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 780px) {
+  .register-page header {
+    margin-bottom: 15px;
+  }
+
+  .register-page footer {
+    bottom: 2%;
+  }
+
+  .register-page .registration-info p:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 703px) {
+  .register-page form p {
+    margin: 17px 0;
+  }
+
+  .register-page .form-group {
+    margin-bottom: 15px;
+  }
+
+  .register-page .registration-info p:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 22px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .register-page footer {
+    position: initial;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .register-page header h2 {
+    font-size: 21px;
+  }
+}
 .home-page {
   position: relative;
   padding-bottom: 82px;
@@ -982,15 +1112,74 @@ footer {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 21px;
-  padding: 18px;
+  gap: 3px;
+  padding: 9px;
   border: 1px solid #ADACBC;
   border-radius: 8px;
 }
-.home-page .camera-icons .camera-icon {
-  margin: auto;
+.home-page .camera-icons input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.home-page .camera-icons label {
+  all: unset;
+}
+.home-page .camera-icons .icon {
+  width: 40px;
+  height: 46px;
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border-radius: 7px;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-1 {
+  background: url("../img/ionic-white-md-school.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-2 {
+  background: url("../img/awesome-white-baby.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-3 {
+  background: url("../img/awesome-white-bath.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-4 {
+  background: url("../img/awesome-white-desktop.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-5 {
+  background: url("../img/ionic-ios-white-man.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons input[type=radio]:checked + .icon-6 {
+  background: url("../img/ionic-white-ios-woman.svg") #F28740 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.home-page .camera-icons-modal {
+  padding: 0 8px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 355px) {
+  .home-page .cameras-groups .d-grid {
+    gap: 14px;
+  }
+}
+@media screen and (max-width: 363px) {
+  .home-page .camera-icons .icon {
+    width: 100%;
+    height: 40px;
+  }
+}
 .group-page {
   position: relative;
   padding-bottom: 80px;
@@ -1117,6 +1306,26 @@ footer {
   background-position: center !important;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 369px) {
+  .group-page .group-desc h3 {
+    font-size: 20px;
+  }
+
+  .group-page .camera-option {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-height: 685px) {
+  .group-page .form-control {
+    height: 55px;
+  }
+
+  .group-page .checkbox-list {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
 .camaras-page {
   position: relative;
   padding-bottom: 80px;
@@ -1144,7 +1353,7 @@ footer {
 
 .single-camera-page {
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 100px;
   min-height: 587px;
 }
 .single-camera-page span,
@@ -1339,6 +1548,49 @@ footer {
   margin-right: 12px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 361px) {
+  .single-camera-page .camera-description h2 {
+    font-size: 20px;
+  }
+
+  .single-camera-page .camera-description .d-block p {
+    font-size: 14px;
+  }
+
+  .single-camera-page .camera-description .status span {
+    font-size: 15px;
+  }
+
+  .single-camera-page .camera-users .header {
+    padding: 0 10px;
+    padding-top: 15px;
+  }
+  .single-camera-page .camera-users .header h4 {
+    font-size: 14px;
+  }
+  .single-camera-page .camera-users .header span {
+    font-size: 14px;
+  }
+
+  .users {
+    margin-top: 12px;
+  }
+  .users img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .single-camera-page .camera-users {
+    margin-top: 326px;
+  }
+}
+@media screen and (max-height: 685px) {
+  .single-camera-page .checkbox-list {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
 .recordings-history-page {
   position: relative;
   padding-bottom: 80px;
@@ -1432,11 +1684,14 @@ footer {
 }
 
 .download-recording-page .download-recording-content {
-  min-height: 379px;
+  min-height: 100vh;
 }
 .download-recording-page .blocks-container {
-  width: 40%;
-  padding: 14px;
+  position: relative;
+  width: 36%;
+  margin: 1.5% 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .download-recording-page .blocks-container .header a {
   margin-right: 12px;
@@ -1495,6 +1750,11 @@ footer {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.download-recording-page .blocks-grid-container .checkbox-grid {
+  grid-auto-rows: 47px;
+  overflow-y: scroll;
+  height: 158px;
+}
 .download-recording-page .blocks-grid-container p {
   margin: 6px 0;
   font-size: 14px;
@@ -1502,6 +1762,10 @@ footer {
   font-family: "Open sans";
 }
 .download-recording-page .blocks-grid-container button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: inherit;
   margin-top: 12px;
   height: 40px;
 }
@@ -1610,6 +1874,53 @@ footer {
 .download-recording-page .download-request .send-request .modal-body p {
   font-size: 14px;
 }
+
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-height: 373px) {
+  .download-recording-page .blocks-grid-container .checkbox-grid {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .download-recording-page .blocks-grid-container .checkbox-grid {
+    grid-auto-rows: 35px;
+  }
+
+  .download-recording-page .blocks-slide {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 644px) {
+  .checkbox-grid .input-content {
+    padding: 0 19px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .download-recording-page .blocks-container h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 708px) {
+  .download-recording-page .blocks-grid-container .checkbox-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .download-recording-page .blocks-grid-container .checkbox-grid {
+    grid-auto-rows: 39px;
+  }
+
+  .download-recording-page .blocks-slide {
+    height: 39px;
+  }
+
+  .download-recording-page .blocks-slide .blocks-slide-content {
+    font-size: 14px;
+  }
+}
 .download-recording-2-page {
   position: relative;
   padding-bottom: 80px;
@@ -1654,11 +1965,20 @@ footer {
   font-weight: 600;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 355px) {
+  .download-recording-2-page .checkbox-grid {
+    margin-top: 180px;
+  }
+}
 .my-account-page header {
   margin-top: 12px;
 }
 .my-account-page header h2 {
   font-size: 22px;
+}
+.my-account-page .profile {
+  padding-bottom: 120px;
 }
 .my-account-page .profile .profile-menu {
   margin-top: 40px;
@@ -1823,8 +2143,15 @@ footer {
   margin-bottom: 6px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 369px) {
+  .info-account-page header h2 {
+    font-size: 18px;
+  }
+}
 .secondary-users-page {
   position: relative;
+  padding-bottom: 100px;
 }
 .secondary-users-page header {
   padding-top: 14px;
@@ -1937,8 +2264,20 @@ footer {
   top: -23px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 359px) {
+  .secondary-users-page header h2 {
+    font-size: 18px;
+  }
+
+  .secondary-users-page .secondary-users-container .secondary-users-content .menu-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .help-page {
   position: relative;
+  padding-bottom: 120px;
 }
 .help-page header {
   padding-top: 14px;
@@ -1962,6 +2301,12 @@ footer {
   margin-top: 38px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 345px) {
+  .help-page header h2 {
+    font-size: 18px;
+  }
+}
 .frequent-questions-page {
   position: relative;
   padding-bottom: 80px;
@@ -2027,6 +2372,12 @@ footer {
   font-size: 14px;
 }
 
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 355px) {
+  .frequent-question-single-page .frequent-question-single-container h2 {
+    font-size: 23px;
+  }
+}
 .documentation-page {
   position: relative;
   padding-bottom: 80px;
@@ -2052,6 +2403,7 @@ footer {
 
 .documentation-single-page {
   position: relative;
+  padding-bottom: 80px;
 }
 .documentation-single-page header {
   padding-top: 14px;

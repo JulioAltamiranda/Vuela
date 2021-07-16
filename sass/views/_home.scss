@@ -223,17 +223,77 @@
             font-size: 14px;
         }
     }
-    .camera-icons {
+    .camera-icons{
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: 21px;
-        padding: 18px;
+        gap: 3px;
+        padding: 9px;
         border: 1px solid $gray-350;
         border-radius: 8px;
-        .camera-icon {
-            margin: auto;
+        input[type=radio] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
         }
+        label{
+            all: unset;
+        }
+        .icon{
+            width: 40px;
+            height: 46px;
+            cursor: pointer;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+            border-radius: 7px;
+        }
+        input[type=radio]:checked+.icon-1{
+            background: url('../img/ionic-white-md-school.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-2{
+            background: url('../img/awesome-white-baby.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-3{
+            background: url('../img/awesome-white-bath.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-4{
+            background: url('../img/awesome-white-desktop.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-5{
+            background: url('../img/ionic-ios-white-man.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        input[type=radio]:checked+.icon-6{
+            background: url('../img/ionic-white-ios-woman.svg') $yellow-500!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+    }
+    .camera-icons-modal{
+        padding: 0 8px;
+    }
    
+}
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width:355px){
+    .home-page .cameras-groups .d-grid{
+        gap: 14px;
     }
 }
+@media screen and (max-width:363px){
+    .home-page .camera-icons .icon{
+        width: 100%;
+        height: 40px;
+    }
+}
+
